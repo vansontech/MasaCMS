@@ -78,6 +78,7 @@ version 2 without this exception.  You may, if you choose, apply this exception 
 	<cfheader name="Pragma" value="no-cache">
 	<cfheader name="Expires" value="#getHttpTimeString(now())#">
 	<cfparam name="Cookie.fetDisplay" default="">
+	<cfparam name="session.dateKeyFormat" default='medium' />
 	<cfset completeurls=(variables.$.content('type') eq 'Variation' or variables.$.siteConfig('isRemote'))>
 	<cfif variables.$.content('type') eq 'Variation'>
 		<cfoutput>
